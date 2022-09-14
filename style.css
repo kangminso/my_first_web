@@ -1,0 +1,80 @@
+  body{
+    margin: 0px;
+  }
+  a {
+    color:blue;
+    text-align: left;
+    
+  }
+  p {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  h2 ,h3{
+    margin-top: 30px;
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 50px;
+    font-family: "궁서";
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin:0px;
+    padding: 15px;
+  }
+  li{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+  }
+  h4{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+  ul{
+
+  }
+  #grid ol{
+    padding-left: 0px;
+    padding-top: 23px;
+    border-right: 1px solid black;
+    width: 1fr;
+    margin-top: 0px;
+    text-align: center;
+  }
+  #grid li{
+    margin-top: 5px;
+    margin-right: 200px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    text-align: center;
+  }
+  #article{
+
+  }
+  href=index.html{
+    color: blue;
+  }
+  @media(max-width:1250px){
+    #grid{
+      display: block;
+    }
+    h1{
+      border-bottom: none;
+    }
+    #grid ol{
+      border-right: none;
+    }
+    li{
+      border-right: none;
+    }
+    h2 h3 h5{
+      text-align: center;
+    }
+  }

@@ -49,6 +49,7 @@
   #grid li{
     margin-top: 5px;
     margin-right: 200px;
+    text-align: center;
   }
   #grid{
     display: grid;

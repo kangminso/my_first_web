@@ -2,28 +2,35 @@
     margin: 0px;
   }
   a {
-    color:blue;
+    color:black;
     text-align: center;
-
+    text-decoration:;
+    text-decoration-color: red;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  ol{
+    margin: 0px;
+    padding: 0px;
   }
   p {
-    margin: 15px;
-    padding: 10px;
     text-align: center;
   }
   h2 ,h3{
-    margin-top: 30px;
     text-align: center;
-    border-top: 2px solid black;
-    padding-top: 50px;
+    padding: 14px;
+    margin: 0px;
   }
   h1 {
     font-size: 50px;
     font-family: "궁서";
     text-align: center;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid gray;
     margin:0px;
     padding: 15px;
+    background-color: green;
   }
   li{
     font-size: 20px;
@@ -31,20 +38,31 @@
     padding: 15px;
   }
   h4{
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     padding: 20px;
   }
-  ul{
-
+  #grid2 ul{
+    background-color: #ffffe3;
+  }
+  #grid2 ol{
+    background-color: #ffffe3;
+  }
+  #grid2 h4{
+    margin: 0px;
+  }
+  #grid2 p{
+    margin: 0px;
   }
   #grid ol{
     padding-left: 0px;
-    padding-top: 23px;
-    border-right: 1px solid black;
     width: 1fr;
-    margin-top: 0px;
+    margin: 0px;
     text-align: center;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: #ffffe3;
+
   }
   #grid li{
     margin-top: 5px;
@@ -52,11 +70,38 @@
   }
   #grid{
     display: grid;
-    grid-template-columns: 1.2fr 4fr;
+    grid-template-columns: 1.1fr 2fr 2fr;
     text-align: center;
   }
+  #grid div{
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding-bottom: 50px;
+    background-color: #ffffe3;
+  }
   #article{
-
+    background-color: #ffffe3;
+  }
+  #dyfl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #dyfl ol{
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #ffffe3;
+    padding: 20px;
+  }
+  #dyfl div{
+    text-align: center;
+    background-color: #ffffe3;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    padding-top: 100px;
   }
   href=index.html{
     color: blue;
@@ -66,10 +111,14 @@
       display: block;
     }
     h1{
-      border-bottom: none;
+
     }
     #grid ol{
       border-right: none;
+    }
+    #grid div{
+      border-right: none;
+
     }
     li{
       border-right: none;
@@ -77,4 +126,3 @@
     h2 h3 h5{
       text-align: center;
     }
-  }

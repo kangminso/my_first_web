@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>리니지M 던전 목록</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h2><a href="index.html">홈으로</a></h2>
+<style>
+  #List{
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #List li{
+    font-size: 25px;
+    padding: 10px;
+    border-bottom:3px solid gray;
+  }
+  .item p{
+    display: flex;
+    border-bottom:3px solid gray;
+    padding: 20px;
+    margin: 0px;
+  }
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>리니지M 던전 목록</title>
+</head>
+<body style="background-Color:gray;">
+  <h1 style="color:aqua; font-weight: bold; text-align:center;">지역별 몬스터정보</h1>
+<div id="List">
+  <div style="border-right:3px solid black; background-Color:#ffcccc; color:black;">
+    <ol style="padding: 0px;">
+      <li>말하는 섬</li>
+      <li style="padding:60px;">아덴대륙 던전</li>
+      <li>아덴대륙 필드</li>
+      <li>특수 던전</li>
+      <li>월드&마스터 던전</li>
+      <li>신념의 탑</li>
+      <li>오만의 탑</li>
+      <li>라스타바드</li>
+      <li style="border:none;">성 던전</li>
+    </ol>
+    </div>
+    <div class="item" style="background-color:#f2d4d4; color:black;">
+      <p style="padding-top:23px; padding-bottom:25px;">01.거미숲 02.검은 기사단 선착장 03.검은 기사단 야영지 06.난쟁이 부락(동) 07.난쟁이 부락(서)
+      08.말섬 던전 11.북섬 12.오크망루 13.오크부락</p>
+      <p style="padding-top:112px; padding-bottom:143px;">
+      02.거울의 숲 04.고룡의 성지 06.굳어버린 용암지대 12.남부 필드 13.동부 사막지대 14.드워프 부락
+      15.로서스섬 17.마법사의 연구실 18.망자의 무덤 19.메마른 불모지 20.무너진 설벽 21.밀림지대
+      25.산적소굴 27.샌드 웜의 안식처 28.서부 사막지대 29.오렌 설벽 31.시련의 숲 33.아덴 집시촌
+      34.야만의 숲지대 38.엘모어 격전지 39.엘모어 전초기지 42.오크 부락 43.오크 숲 벌목지대
+      44.오크 숲 안쪽 46.요정 숲 47.용의 계곡 삼거리 48.용의 계곡 동쪽 49.용의 계곡 북쪽
+      50.용의 계곡 서쪽 51.용의 계곡 중앙 56.은기사 마을 북쪽 숲 61.죽음의 폐허 63.카오틱 신전
+      70.풍룡의 둥지 74.화룡의 둥지 76.황혼 산맥 77.흑기사 전투기지</p>
+      <p style="padding-bottom:45px;">
+      01.개미굴 07.글루디오 던전 09.파멸의 기란감옥 26.상아탑 35.어둠의 수련 던전 37.에바왕국 던전
+      45.요정 숲 던전 51.용의 계곡 던전 59.이계의 균열 74.화염 던전</p>
+      <p style="padding-bottom:15px; padding-top:17px;">
+      버림받은 자들의 땅 몽환의 섬 고대 정령의 무덤 그림자 신전 고대 거인의 무덤</p>
+      <p style="padding-bottom:45px;">
+      티칼 사원 잊혀진 섬 다크엘프의 성지 지배의 탑 정상 테베라스 사막 해적섬 골렘 연구소 마족들의 땅 에스카로스 아틀란티스 나그바스의 예배당 악몽의 섬</p>
+      <p style="padding-bottom:12px;">
+      1층 2층</p>
+      <p style="padding-bottom:12px;">
+      1층(왜곡) 2층(불신) 3층(공포) 4층(죽음) 5층(지옥) 6층(불사) 7층(잔혹) 8층(어둠) 9층(불멸) 10층(오만)</p>
+      <p style="padding-bottom:12px;">
+      중앙 광장 지하 결투장 지하 통제실 암살군왕의 집무실 야수 조련실 야수 훈련장 마수군왕의 집무실 흑마법 수련장 흑마법 연구실 마령군왕의 집무실 데빌로드 용병실 데빌로드 제단 명법군왕의 집무실</p>
+      <p style="border:none;">
+      켄트 성 던전 기란 성 던전</p>
+  </div>
+</div>
 
-    <h3>말하는 섬:</h3>	<p>01.거미숲 02.검은 기사단 선착장 03.검은 기사단 야영지 06.난쟁이 부락(동) 07.난쟁이 부락(서)
-        08.말섬 던전 11.북섬 12.오크망루 13.오크부락<p>
-    <h3>아덴대륙 필드:</h3> <p>(가나다 순)<p>02.거울의 숲</p> <p>04.고룡의 성지</p> <p>06.굳어버린 용암지대</p> <p>12.남부 필드</p>
-        <p>13.동부 사막지대</p> <p>14.드워프 부락</p> <p>15.로서스섬</p> <p>17.마법사의 연구실</p>
-        <p>18.망자의 무덤</p> <p>19.메마른 불모지</p> <p>20.무너진 설벽</p> <p>21.밀림지대</p>
-        <p>25.산적소굴</p> <p>27.샌드 웜의 안식처</p> <p>28.서부 사막지대</p> <p>29.오렌 설벽</p> <p>31.시련의 숲</p> <p>33.아덴 집시촌</p>
-        <p>34.야만의 숲지대</p> <p>38.엘모어 격전지</p> <p>39.엘모어 전초기지</p> <p>42.오크 부락 <p>43.오크 숲 벌목지대</p>
-        <p>44.오크 숲 안쪽</p> <p>46.요정 숲</p> <p>47.용의 계곡 삼거리</p> <p>48.용의 계곡 동쪽</p> <p>49.용의 계곡 북쪽</p>
-        <p>50.용의 계곡 서쪽</p> <p>51.용의 계곡 중앙</p> <p>56.은기사 마을 북쪽 숲</p> <p>61.죽음의 폐허</p> <p>63.카오틱 신전</p>
-        <p>70.풍룡의 둥지</p><p>74.화룡의 둥지</p> <p>76.황혼 산맥</p> <p>77.흑기사 전투기지</p>
 
-    <h3>아덴대륙 던전:</h3> <p>01.개미굴 <p>07.글루디오 던전</p> <p>09.파멸의 기란감옥</p> <p>26.상아탑</p> <p>35.어둠의 수련 던전</p> <p>37.에바왕국 던전</p> <p>45.요정 숲 던전</p> <p>51.용의 계곡 던전</p> <p>59.이계의 균열</p> <p>74.화염 던전</p>
-    <h3>특수 던전:</h3>	<p>버림받은 자들의 땅 <p>몽환의 섬</p><p>고대 정령의 무덤</p> <p>그림자 신전</p> <p>고대 거인의 무덤</p>
-    <h3>월드&마스터 던전:</h3>	<p>티칼 사원</p> <p>잊혀진 섬</p> <p>다크엘프의 성지</p> <p>지배의 탑</p> <p>정상 테베라스 사막</p> <p>해적섬</p> <p>골렘 연구소</p> <p>마족들의 땅</p> <p>에스카로스</p> <p>아틀란티스</p> <p>나그바스의 예배당</p>
-        <p>신념의 탑	1층 2층</p>
-    <h3>오만의 탑:</h3> <p>1층(왜곡)</p> <p>2층(불신)</p> <p>3층(공포)</p> <p>4층(죽음)</p> <p>5층(지옥)</p> <p>6층(불사)</p> <p>7층(잔혹)</p> <p>8층(어둠)</p> <p>9층(불멸)</p> <p>10층(오만)</p>
-    <h3>라스타바드	중앙 광장:</h3> <p>지하 결투장</p> <p>지하 통제실</p> <p>암살군왕의 집무실</p> <p>야수 조련실</p> <p>야수 훈련장</p> <p>마수군왕의 집무실</p> <p>흑마법 수련장</p> <p>흑마법 연구실</p> <p>마령군왕의 집무실</p> <p>데빌로드 용병실</p> <p>데빌로드 제단</p> <p>명법군왕의 집무실</p>
-        <p>성 던전</p>	<p>켄트 성 던전</p> <p>기란 성 던전</p>
-
-    <h2><a href="index.html">홈으로</a></h2>
+    <h2 style="text-align: right; padding:50px;"><a href="index.html">홈으로</a></h2>
   </body>
 </html>
